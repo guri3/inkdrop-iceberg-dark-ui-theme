@@ -1,8 +1,8 @@
 {
-  "name": "default-dark-ui",
-  "version": "2.0.0",
+  "name": "iceberg-dark-ui",
+  "version": "1.0.0",
   "theme": "ui",
-  "description": "Default Dark UI Theme for Inkdrop",
+  "description": "Iceberg Dark UI theme for Inkdrop",
   "styleSheets": [
     "theme.min.css"
   ],
@@ -14,7 +14,7 @@
     "inkdrop",
     "markdown"
   ],
-  "author": "Takuya Matsuyama<t@inkdrop.app>",
+  "author": "Daiki Oguri<aloesquash.lock@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "semantic-ui": "^2.4.2"

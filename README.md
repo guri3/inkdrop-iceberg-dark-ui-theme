@@ -1,22 +1,17 @@
-# Default Dark UI Theme for Inkdrop
+# Inkdrop Iceberg Dark UI Theme
 
-Inkdrop's UI elements are styled based on [Semantic UI](http://semantic-ui.com/).
-It's mostly common in customizing the theme with it, so [their documentation](http://learnsemantic.com/) is very helpful to get started.
+[Iceberg](https://cocopon.github.io/iceberg.vim/) like dark ui theme for Inkdrop Markdown Editor.
 
-Read [the documentation](http://doc.inkdrop.info/manual/creating-a-theme) for detailed instructions.
+## Screenshot
 
-## How to build
+<img width="1792" alt="スクリーンショット 2020-05-10 11 41 58" src="https://user-images.githubusercontent.com/18714702/81489675-4bfe9c00-92b3-11ea-9de6-09814f7385ae.png">
 
+## install
+
+```sh
+$ ipm install iceberg-dark-ui
+
+# Additional
+$ ipm install iceberg-syntax
+$ ipm install iceberg-preview
 ```
-npm install
-gulp build
-```
-
-## Which files to edit
-
- * `src/site/globals/site.variables`
-   - Variables for Inkdrop-specific components
- * `src/site/globals/site.overrides`
-   - Declarations of CSS variables
- * `src/themes/default/globals/site.variables`
-   - Common variables

@@ -1,3 +1,154 @@
 /*******************************
         Global Overrides
 *******************************/
+
+@primaryColor: #91acd1;
+@primaryColorFocus: #91acd1;
+@linkHoverColor: @primaryColor;
+
+/*-------------------
+      Side Bar
+--------------------*/
+@sidebarBackground     : @pageBackground;
+@sidebarMenuItemActiveBackground: #22243a;
+@sidebarMenuSectionColor: @lightTextColor;
+@sidebarMenuItemColor  : @textColor;
+@sidebarMenuActionColor : @lightTextColor;
+@sidebarMenuActionHoverColor : @primaryColorFocus;
+@sidebarSyncStatusViewBackground: #22243a;
+@sidebarSyncStatusViewTextColor: @textColor;
+@sidebarSyncStatusViewDetailColor: @lightTextColor;
+@sidebarScrollbarWidth: 6px;
+@sidebarScrollbarTrackBackground: rgba(0,0,0,0.02);
+@sidebarScrollbarThumbBackground: rgba(255,255,255,0.1);
+
+/*-------------------
+      Scroll Bar
+--------------------*/
+@scrollbarWidth: 6px;
+@scrollbarTrackBackground: #24294080;
+@scrollbarThumbBackground: #242940a0;
+
+/*-------------------
+      Note List Bar
+--------------------*/
+@noteListBarBackground: @pageBackground;
+@noteListBarPinnedSectionHeaderBackground: rgba(255, 255, 255, 0.05);
+@noteListBarPinnedSectionHeaderBorderBottom: 1px solid rgba(255, 255, 255, 0.1);
+@noteListBarPinnedSectionFooterBorderBottom: 4px solid rgba(255, 255, 255, 0.2);
+@noteListViewItemColor: @mutedTextColor;
+@noteListViewItemSeparatorBorder: 1px solid #272c42;
+@noteListViewItemDateColor: @primaryColor;
+@noteListViewItemTagColor: @primaryColor;
+@noteListViewItemActiveBackground: #22243a;
+@noteListViewItemActiveColor: @textColor;
+@noteListViewItemActiveDateColor: @primaryColor;
+@noteListViewItemActiveTagColor: @primaryColor;
+@noteListViewItemFocusInnerShadow: inset 0 0 4px rgba(0,0,0,0.8);
+@noteSearchBarBackground: @noteListBarBackground;
+@noteSearchBarBorderBottom: 1px solid #272c42;
+@noteSearchBarInputBorder: none;
+@noteSearchBarInputBackground: @inputBackground;
+
+/*-------------------
+      Header Note Menu
+--------------------*/
+@headerNoteMenuBackground: transparent;
+@headerNoteMenuColor: @lightTextColor;
+@headerNoteMenuActionItemActiveBackground: rgba(49, 204, 236, 0.3);
+@headerNoteMenuActionItemActiveBorder: 1px solid rgba(49, 204, 236, 0.8);
+@headerNoteMenuActionItemSeparatorBorder: 1px solid @whiteDown;
+@headerNoteMenuEncryptButtonColor: @yellowTextColor;
+@headerNoteMenuEncryptButtonBackground: @yellowBackground;
+
+/*-------------------
+      Preferences
+--------------------*/
+@preferencesSidebarBackground: @pageBackground;
+@preferencesSidebarItemActiveBackground: #22243a;
+@preferencesViewBackground: @pageBackground;
+
+/*-------------------
+      Task Icons
+--------------------*/
+@taskIconActive: darkgray;
+@taskIconOnHold: #e2a478;
+@taskIconCompleted: #c0ca8e;
+@taskIconDropped: #e27878;
+
+/*-------------------
+  Task Progress View
+--------------------*/
+@taskProgressViewBackgroundColor: rgba(0, 0, 0, 0.3);
+@taskProgressViewForegroundColor: rgba(255, 255, 255, 0.6);
+@taskProgressViewCompletedColor: #b4be82;
+
+/*-------------------
+  Other Overrides
+--------------------*/
+
+/* Sidebar */
+.sidebar-menu, .note-list-bar-layout {
+  border-right: 1px solid #272c42;
+}
+
+/* Editor */
+.editor-title-input > input,
+.editor-title-input > input:focus,
+.note-tags-bar-input > .ui.input > input,
+.note-tags-bar-input > .ui.input > input:focus {
+  background: @pageBackground !important;
+}
+
+.mde-toolbar {
+  border-top: 1px solid #272c42;
+}
+
+.mde-toolbar i.separator {
+  border-left: 1px solid #272c42;
+}
+
+/* Modal */
+.ui.modal.transition,
+.ui.modal.transition > .header,
+.ui.modal.transition > .content {
+  background: @pageBackground;
+  color: #c6c8d1;
+}
+
+.ui.modal.transition > .actions {
+  background: @pageBackground;
+  border-top: 1px solid #272c42
+}
+
+.ui.modal > .header {
+  borderbottom: 1px solid #272c42;
+}
+
+.ui.modal.transition > .actions > .button.primary {
+  color: @pageBackground;
+  background: #91acd1;
+}
+
+.ui.modal.transition > .actions > .button.primary:hover {
+  color: @pageBackground;
+  background: fade(#91acd1, 30%);
+}
+
+.ui.secondary.vertical.pointing.menu {
+  border-right: 1px solid #272c42 !important;
+}
+
+.ui.divider:not(.vertical):not(.horizontal) {
+  border-top: 1px solid #272c42 !important;
+}
+
+.ui.keybindings-list-view,
+.ui.plugin-list-item-view {
+  background: #1e2132 !important;
+}
+
+/* Preferences */
+.preferences-view .ui.button {
+  background: #272c42 !important;
+}
