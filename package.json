@@ -14,7 +14,11 @@
     "inkdrop",
     "markdown"
   ],
-  "author": "Daiki Oguri<aloesquash.lock@gmail.com>",
+  "author": "guri3<aloesquash.lock@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guri3/inkdrop-iceberg-dark-ui-theme"
+  },
   "license": "MIT",
   "devDependencies": {
     "semantic-ui": "^2.4.2"
